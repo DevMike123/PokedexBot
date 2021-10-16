@@ -36,7 +36,7 @@ client.on('message', async message => {
             const embed = new MessageEmbed();
             embed.setTitle(`#${id} — ${number}`)
             embed.setURL(`https://www.pokemon.com/us/pokedex/${name}`);
-            embed.setImage(`https://assets.poketwo.net/shiny/${id}.png`);
+            embed.setImage(`https://assets.poketwo.net/images/${id}.png`);
             embed.setAuthor('Professor Oak', 'https://pbs.twimg.com/profile_images/2927846251/bf8cef29642aceb034d4b01ab29a4ca7_normal.png', 'https://bulbapedia.bulbagarden.net/wiki/Professor_Oak');
             embed.setColor(`1d9e85`);
             embed.addField('Types',`${types[0].type.name[0].toUpperCase() + types[0].type.name.slice(1)}`, true);
